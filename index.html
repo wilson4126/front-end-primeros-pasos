@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+    <title>CV</title>
+</head>
+<body>
+    <!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+    <div class="py-4 px-3 mb-4 bg-light">
+      <div class="media d-flex align-items-center"><img id="imgPerfil"  alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        <div class="media-body">
+          <h4 class="m-0" id="nombre">Norman George</h4>
+          <p class="font-weight-light text-muted mb-0">Desarrollador web</p>
+        </div>
+      </div>
+    </div>
+  
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+  
+    <ul  class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <p  onclick="Opcion(event, 'Estudios')" class="cursor-pointer nav-link text-dark font-italic bg-light" >
+                  <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                  Estudios
+        </p>
+      </li>
+      <li class="nav-item">
+        <p onclick="Opcion(event, 'Habilidades')" class="cursor-pointer nav-link text-dark font-italic">
+              <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+              Habilidades
+        </p>
+      </li>
+      <li class="nav-item">
+        <p onclick="Opcion(event, 'Experiencias')" class="cursor-pointer nav-link text-dark font-italic">
+                  <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                  Experiencias
+        </p>
+      </li>
+    </ul>
+  
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Datos personales</p>
+  
+    <ul class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <p id="location" class="font-weight-light text-muted nav-link text-dark font-italic">
+                  <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                  Nacionalidad: Argentina
+        </p>
+      </li>
+      <li class="nav-item">
+        <p class="font-weight-light text-muted nav-link text-dark font-italic">
+                  <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                  Fecha de nacimiento: 25/03/1998
+        </p>
+      </li>
+      <li class="nav-item">
+        <p class="font-weight-light text-muted nav-link text-dark font-italic">
+                  <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+                  DNI: 12983739
+        </p>
+      </li>
+    </ul>
+  </div>
+  <!-- End vertical navbar -->
+  
+  
+  <!-- Page content holder -->
+  <div class="page-content p-5" id="content">  
+      <div class="separator"></div>
+      <div id="Estudios" class="d-none">
+
+        <div class="card">
+          <h5 class="card-header">
+            Bachiller
+          </h5>
+          <div class="card-body">
+            <h5 class="card-title">escuela e.e.m. Nº 2 haedo</h5>
+            <p class="card-text">Secundario - Graduado</p>
+          </div>
+        </div>
+        
+        <div class="card mt-3">
+          <h5 class="card-header">
+            Ingenieria informatica
+          </h5>
+          <div class="card-body">
+            <h5 class="card-title">Universidad de la matanza UNLAM</h5>
+            <p class="card-text">Graduado</p>
+          </div>
+        </div>
+        </div>
+     
+      <div id="Habilidades" class="d-none">
+        <div class="card">
+          <h5 class="card-header">
+            Cursos
+          </h5>
+          <div class="card-body">
+            <h5 class="card-title">React</h5>
+            <p class="card-text">Intermedio</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">avanzado</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">C#</h5>
+            <p class="card-text">Avanzado</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Entity framework</h5>
+            <p class="card-text">Intermedio</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ingles</h5>
+            <p class="card-text">Intermedio</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <div id="Experiencias" class="d-none">
+        <div class="card">
+          <h5 class="card-header">
+            Programador
+          </h5>
+          <div class="card-body">
+            <h5 class="card-title">Soldoc</h5>
+            <p class="card-text">ayudo a crear paginas web y aplicaciones para vender a otras empresas que las necesiten. Por ejemplo: reconocimiento facial, pagina web de la empresa, sistema de reposición para empresa industrial.</p>
+          </div>
+          </div>
+          <div class="card mt-3">
+            <h5 class="card-header">
+              Cajero
+            </h5>
+            <div class="card-body">
+              <h5 class="card-title">Pescaderia</h5>
+              <p class="card-text">Atendiendo gente y manejando la caja, hacer cierre al finalizar el dia y llevar registro de eso</p>
+            </div>
+            </div>
+          <div class="card mt-3">
+            <h5 class="card-header">
+              Cajero/Repositor
+            </h5>
+            <div class="card-body">
+              <h5 class="card-title">Supermercado Altamira</h5>
+              <p class="card-text">Asistí a un promedio de 200 clientes semanales en su proceso de compra brindando información y realizando el cobro de productos de forma eficiente.
+                Realicé cobros en efectivo, con tarjetas de crédito y débito, así como tarjetas de regalo.
+                Repuse los productos en las estanterías de forma efectiva y ordenada.
+                Reorganicé la clasificación de la sección de alimentos enlatados aumentando la capacidad de almacenamiento de las estanterías en un 10%.</p>
+            </div>
+            </div>
+      </div>
+      </div>
+    </div>  
+  </div>
+    
+</body>
+<script>
+    fetch("https://randomuser.me/api/")
+  .then(response=> response.json())
+  .then(json => {
+      console.log(json.results[0])
+            document.getElementById("nombre").innerHTML=json.results[0].name.first + " " + json.results[0].name.last
+            document.getElementById("imgPerfil").setAttribute("src", json.results[0].picture.large)
+            document.getElementById("location").innerHTML="Nacionalidad: "+json.results[0].location.country
+            document.getElementById("date").innerHTML="Fecha de nacimiento: "+json.results[0].dob.date
+
+    })
+
+</script>
+</html>
